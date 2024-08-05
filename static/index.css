@@ -1,115 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
-@import url('https://unpkg.com/@fortawesome/fontawesome-free@5.15.4/css/all.min.css');
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
-* {
-  font-family: Roboto;
-}
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+        @import url('https://unpkg.com/@fortawesome/fontawesome-free@5.15.4/css/all.min.css');
 
-body {
-  margin: 0;
-  background: #111;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  animation: fadeInAnimation ease-in-out 0.3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
 
-.fa-magnifying-glass {
-  color: white;
-}
+        * {
+            font-family: Roboto, sans-serif;
+        }
 
-.logo-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 10%;
-}
+        body {
+            margin: 0;
+            background: #1c1c1c;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            animation: fadeInAnimation ease-in-out 0.3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
 
-.logo {
-  width: 150px;
-}
+        .fa-magnifying-glass {
+            color: white;
+        }
 
-.logo-wrapper .text {
-  font-size: 75px;
-  font-family: "Roboto";
-  color: #FFF;
-}
+        .logo-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
 
-.logo-wrapper h1 {
-  color: white;
-}
+        .logo {
+            width: 150px;
+        }
 
-footer {
-  margin-top: auto;
-  width: 93%;
-  align-self: center;
-  height: 80px;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
+        .logo-wrapper .text {
+            font-size: 75px;
+            font-family: "Roboto";
+            color: #FFF;
+        }
 
-footer a,
-footer span {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #FFF;
-  font-size: 15px;
-}
+        .logo-wrapper h1 {
+            color: white;
+        }
 
-footer a {
-  cursor: pointer;
-}
+        footer {
+            margin-top: auto;
+            width: 93%;
+            align-self: center;
+            height: 80px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
 
-footer a:hover {
-  text-decoration: underline;
-}
+        footer a,
+        footer span {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #FFF;
+            font-size: 15px;
+        }
 
-form {
-  display: flex;
-  justify-content: center;
-}
+        footer a {
+            cursor: pointer;
+        }
 
-.desc {
-  display: flex;
-  justify-content: center;
-}
+        footer a:hover {
+            text-decoration: underline;
+        }
 
-.desc p {
-  width: 560px;
-  color: rgba(253, 253, 253, 0.514);
-}
+        .form-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
-form input {
-  background: none;
-  font-family: inherit;
-  padding: 0px 17px;
-  height: 48px;
-  border: 1px solid rgb(255, 255, 255, .2);
-  color: var(--text-color);
-  border-radius: 3px;
-  outline: none;
-  width: 350px;
-  margin-top: 5px;
-  border-radius: 50px;
-  color: #FFF;
-}
+        .form-wrapper label {
+            font-family: 'Open Sans', sans-serif;
+            color: #FFF;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
 
-form input:focus {
-  border: 1px solid rgba(253, 253, 253, 0.514);
-  border-radius: 6px;
-  animation: fadeInAnimation ease-in-out 0.3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form input {
+            background: #1d1d1d;
+            font-family: inherit;
+            padding: 0px 17px;
+            height: 48px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #FFF;
+            border-radius: 50px;
+            outline: none;
+            width: 350px;
+            margin-top: 5px;
+        }
+   
